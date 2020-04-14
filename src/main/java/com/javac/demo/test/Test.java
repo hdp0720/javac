@@ -2,10 +2,7 @@ package com.javac.demo.test;
 
 import javax.websocket.Session;
 import java.io.*;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * i/o流
@@ -13,6 +10,17 @@ import java.util.Properties;
 public class Test {
 
     public static void  main(String []args) throws Exception{
+        Scanner scanner=new Scanner(System.in);
+        int sum=0;
+        System.out.println("请输入一个数");
+        int num = scanner.nextInt();
+        int count=0;
+        for (int i=1;i<=num;i++){
+            sum=sum*10+num;
+            count+=sum;
+            System.out.println();
+        }
+        System.out.println(count);
 
         char c = 65;
         System.out.println("c = "+c);
